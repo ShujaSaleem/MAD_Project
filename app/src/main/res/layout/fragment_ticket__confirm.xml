@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bus6"
+    android:padding="5dp"
+    tools:context=".Ticket_Confirm">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="0.9"
+            android:padding="5dp"
+            android:background="@drawable/homeb"
+            android:weightSum="1">
+
+            <Button
+                android:id="@+id/TC_BACK"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.8"
+                android:layout_margin="5dp"
+                android:background="@drawable/ic_baseline_arrow_back_24"
+                android:scaleY="0.6"
+                android:scaleX="0.7"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="0.2"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1"
+            android:layout_weight=".1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@drawable/homeb"
+                android:layout_weight="0.1"
+                android:weightSum="1">
+
+                <ImageView
+                    android:id="@+id/TC_Bus_Image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.6"
+                    android:src="@drawable/seat"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginVertical="5dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:layout_weight="0.4"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_weight="0.5"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/bb"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:id="@+id/TC_name"
+                            android:text="Name"
+                            android:gravity="center_vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginVertical="3dp"
+                            android:background="@drawable/home"
+                            android:padding="5dp"
+                            android:layout_margin="5dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:layout_marginHorizontal="5dp"
+                            android:layout_weight="0.25"/>
+
+                        <TextView
+                            android:id="@+id/TC_gender"
+                            android:text="Gender"
+                            android:gravity="center_vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/home"
+                            android:padding="5dp"
+                            android:layout_margin="5dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:layout_marginVertical="3dp"
+                            android:layout_marginHorizontal="5dp"
+                            android:layout_weight="0.25"/>
+
+                        <TextView
+                            android:id="@+id/TC_cnic"
+                            android:text="CNIC"
+                            android:gravity="center_vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/home"
+                            android:padding="5dp"
+                            android:layout_margin="5dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:layout_marginVertical="3dp"
+                            android:layout_marginHorizontal="5dp"
+                            android:layout_weight="0.25"/>
+
+                        <TextView
+                            android:id="@+id/TC_seatno"
+                            android:text="Seat #"
+                            android:gravity="center_vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginVertical="3dp"
+                            android:background="@drawable/home"
+                            android:padding="5dp"
+                            android:layout_margin="5dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:layout_marginHorizontal="5dp"
+                            android:layout_weight="0.25"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:background="@drawable/bb"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="0.5"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:id="@+id/TC_from_to"
+                            android:text="From-to"
+                            android:gravity="center_vertical"
+                            android:layout_width="match_parent"
+                            android:background="@drawable/home"
+                            android:padding="5dp"
+                            android:layout_margin="5dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:layout_height="match_parent"
+                            android:layout_marginVertical="3dp"
+                            android:layout_marginHorizontal="5dp"
+                            android:layout_weight="0.25"/>
+
+                        <TextView
+                            android:id="@+id/TC_date_time"
+                            android:text="Date/Time"
+                            android:gravity="center_vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/home"
+                            android:padding="5dp"
+                            android:layout_margin="5dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:layout_marginVertical="3dp"
+                            android:layout_marginHorizontal="5dp"
+                            android:layout_weight="0.25"/>
+
+                        <TextView
+                            android:id="@+id/TC_Fare"
+                            android:text="Fare"
+                            android:gravity="center_vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginVertical="3dp"
+                            android:background="@drawable/home"
+                            android:padding="5dp"
+                            android:layout_margin="5dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:layout_marginHorizontal="5dp"
+                            android:layout_weight="0.25"/>
+
+                        <TextView
+                            android:id="@+id/TC_bustype"
+                            android:text="Bus Type"
+                            android:gravity="center_vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/home"
+                            android:padding="5dp"
+                            android:layout_margin="5dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:layout_marginVertical="3dp"
+                            android:layout_marginHorizontal="5dp"
+                            android:layout_weight="0.25"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/TC_confirm_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.9"
+                android:layout_marginVertical="5dp"
+                android:background="@drawable/create_button"
+                android:padding="5dp"
+                android:layout_margin="5dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginHorizontal="20dp"
+                android:text="Confirm"
+                android:textSize="20sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

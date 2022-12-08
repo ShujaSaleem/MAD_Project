@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:padding="10dp"
+    android:background="@drawable/bus6"
+    android:weightSum="1">
+
+    <ImageView
+        android:id="@+id/view_busimage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.2"
+        android:src="@drawable/bus19"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="5dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:background="@drawable/homeb"
+        android:layout_weight="0.8"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/BuS_TyPe"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:gravity="center"
+            android:layout_marginVertical="5dp"
+            android:layout_marginHorizontal="7dp"
+            android:text="AC"
+            android:background="@drawable/home"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/BuS_NuMbEr"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:gravity="center"
+            android:layout_marginVertical="5dp"
+            android:layout_marginHorizontal="10dp"
+            android:text="1234"
+            android:background="@drawable/home"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/bus6"
+    tools:context=".Registration">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="0.77777"
+            android:weightSum="1">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="0.4"
+                android:src="@drawable/bus19" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Create Account"
+                android:layout_weight="0.6"
+                android:textColor="@color/white"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/bb"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:layout_weight="0.2222"
+            android:weightSum="1">
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.14285"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:drawableLeft="@drawable/ic_baseline_person_outline_24"
+                android:drawablePadding="8dp"
+                android:background="@drawable/textediter"
+                android:padding="10dp"
+                android:hint="User Name"
+                android:textColorHint="@color/white"
+                android:layout_margin="5dp"/>
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.14285"
+                android:textColorHint="@color/white"
+                android:hint="Email"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:padding="10dp"
+                android:drawableLeft="@drawable/ic_baseline_email_24"
+                android:drawablePadding="8dp"
+                android:background="@drawable/textediter"
+                android:layout_margin="5dp"/>
+
+            <EditText
+                android:id="@+id/phonenumber"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.14285"
+                android:hint="PhoneNumber"
+                android:drawableLeft="@drawable/ic_baseline_phone_iphone_24"
+                android:drawablePadding="8dp"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:background="@drawable/textediter"
+                android:textColorHint="@color/white"
+                android:layout_margin="5dp"/>
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.14285"
+                android:hint="Password"
+                android:drawableLeft="@drawable/ic_baseline_lock_open_24"
+                android:drawablePadding="8dp"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:background="@drawable/textediter"
+                android:textColorHint="@color/white"
+                android:layout_margin="5dp"/>
+
+            <EditText
+                android:id="@+id/confirmpassword"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.14285"
+                android:hint="Confirm Password"
+                android:drawableLeft="@drawable/ic_baseline_lock_open_24"
+                android:drawablePadding="8dp"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:background="@drawable/textediter"
+                android:textColorHint="@color/white"
+                android:layout_margin="5dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                > </LinearLayout>
+            <Button
+                android:id="@+id/signup"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Create an account"
+                android:textColor="@color/white"
+                android:background="@drawable/create_button"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_margin="5dp"
+                android:layout_weight="0.142"/>
+
+            <Button
+                android:id="@+id/ahaa"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Already have an account?"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_margin="5dp"
+                android:layout_weight="0.142"
+                android:textColor="@color/white"
+                android:background="@drawable/border"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

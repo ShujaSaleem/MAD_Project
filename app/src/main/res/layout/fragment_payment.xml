@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="12dp"
+    android:background="@drawable/bus6"
+    tools:context=".Payment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="0.1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.8"
+                android:text="Pay Invoice"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="38sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="0.2"
+                android:background="@drawable/bb"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="1"
+                    android:layout_weight="0.6">
+
+                    <EditText
+                        android:id="@+id/P_Number"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.3333"
+                        android:hint="Jazz Cash Number"
+                        android:textColorHint="@color/white"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:layout_marginVertical="5dp"
+                        android:layout_marginHorizontal="20dp"/>
+
+                    <EditText
+                        android:id="@+id/P_Pin"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.3333"
+                        android:hint="Pin"
+                        android:textColorHint="@color/white"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:layout_marginVertical="5dp"
+                        android:layout_marginHorizontal="20dp"/>
+
+                    <ToggleButton
+                        android:id="@+id/P_Toggle_Btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.3333"
+                        android:background="@drawable/border"
+                        android:layout_marginHorizontal="20dp"
+                        android:textStyle="bold"
+                        android:layout_marginVertical="5dp"
+                        android:textColor="@color/white"
+                        android:textOff="Jazz Cash"
+                        android:textOn="Easy Paysa"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="1"
+                    android:layout_weight="0.4">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_weight="0.25"
+                        android:weightSum="1"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginVertical="5dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.25"/>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.25"/>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.25"/>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.25"/>
+
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/P_Card_Number"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.25"
+                        android:hint="Card Number"
+                        android:textColorHint="@color/white"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:layout_marginVertical="5dp"
+                        android:layout_marginHorizontal="20dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_weight="0.25"
+                        android:weightSum="1"
+                        android:layout_marginVertical="5dp"
+                        android:layout_marginHorizontal="20dp">
+
+                        <EditText
+                            android:id="@+id/P_Exp_date"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:textColorHint="@color/white"
+                            android:textStyle="bold"
+                            android:hint="MM/YY"
+                            android:gravity="center"/>
+
+                        <EditText
+                            android:id="@+id/P_code"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:textColorHint="@color/white"
+                            android:textStyle="bold"
+                            android:hint="Security Code"
+                            android:gravity="center"/>
+
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/P_zip_postal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.25"
+                        android:hint="Zip/Postal Code"
+                        android:textColorHint="@color/white"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:layout_marginVertical="5dp"
+                        android:layout_marginHorizontal="20dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/P_Submit_Btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.9"
+            android:text="Payment"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:background="@drawable/create_button"
+            android:layout_margin="5dp"/>
+
+    </LinearLayout>
+
+</FrameLayout>

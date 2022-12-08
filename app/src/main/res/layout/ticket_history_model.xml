@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:background="@drawable/bus6"
+    android:padding="5dp"
+    android:layout_height="300dp"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/bb"
+        android:layout_weight="0.5"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/H_name"
+            android:text="Name"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginVertical="3dp"
+            android:background="@drawable/home"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_marginHorizontal="5dp"
+            android:layout_weight="0.25"/>
+
+        <TextView
+            android:id="@+id/H_gender"
+            android:text="Gender"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/home"
+            android:layout_marginVertical="3dp"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_marginHorizontal="5dp"
+            android:layout_weight="0.25"/>
+
+        <TextView
+            android:id="@+id/H_cnic"
+            android:text="CNIC"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:background="@drawable/home"
+            android:layout_marginVertical="3dp"
+            android:layout_marginHorizontal="5dp"
+            android:layout_weight="0.25"/>
+
+        <TextView
+            android:id="@+id/H_seatno"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginVertical="3dp"
+            android:layout_weight="0.25"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/home"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:gravity="center_vertical"
+            android:text="Seat #" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="0.5"
+        android:background="@drawable/bb"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/H_from_to"
+            android:text="From-to"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:background="@drawable/home"
+            android:layout_margin="5dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_marginVertical="3dp"
+            android:layout_marginHorizontal="5dp"
+            android:layout_weight="0.25"/>
+
+        <TextView
+            android:id="@+id/H_date_time"
+            android:text="Date/Time"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/home"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_height="match_parent"
+            android:layout_marginVertical="3dp"
+            android:layout_marginHorizontal="5dp"
+            android:layout_weight="0.25"/>
+
+        <TextView
+            android:id="@+id/H_Fare"
+            android:text="Fare"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginVertical="3dp"
+            android:layout_marginHorizontal="5dp"
+            android:background="@drawable/home"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_weight="0.25"/>
+
+        <TextView
+            android:id="@+id/H_bustype"
+            android:text="Bus Type"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginVertical="3dp"
+            android:padding="5dp"
+            android:background="@drawable/home"
+            android:layout_margin="5dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_marginHorizontal="5dp"
+            android:layout_weight="0.25"/>
+
+    </LinearLayout>
+
+</LinearLayout>
